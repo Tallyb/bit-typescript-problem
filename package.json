@@ -1,0 +1,47 @@
+{
+  "name": "bit-tools",
+  "version": "0.0.1",
+  "description": "Bit tools",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:w": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teambit/tools.git"
+  },
+  "author": "Teambit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teambit/tools/issues"
+  },
+  "homepage": "https://github.com/teambit/tools#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^12.12.31",
+    "jest": "^25.2.3",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.2.1",
+    "tslib": "^1.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {},
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/typescript@3.1.40"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "overrides": {
+      "*": {
+        "devDependencies": {
+          "@types/node": "+",
+          "@types/jest": "+"
+        }
+      }
+    }
+  }
+}
